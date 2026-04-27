@@ -242,7 +242,7 @@ export function VSNLanding() {
             <div className="space-y-1">
               <p className="font-semibold text-white text-sm tracking-wide">Terry L. Fossum</p>
               <p className="text-white/40 text-xs">Founder, Visionary Speakers Network</p>
-              <p className="text-white/30 text-xs">#1 WSJ Bestselling Author · TEDx Speaker · 1,500+ Stages Worldwide</p>
+              <p className="text-white/30 text-xs">#1 WSJ Bestselling Author · #2 New TEDx in the World · 1,500+ Stages Worldwide</p>
             </div>
           </motion.div>
         </div>
