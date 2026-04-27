@@ -3,6 +3,7 @@ export interface Speaker {
   name: string;
   credential: string;
   headshotUrl: string | null;
+  headshotPosition?: string;
   talkTitle: string;
   talkSubtitle: string;
   bio: string;
@@ -41,6 +42,7 @@ export const speakers: Speaker[] = [
     name: "Hap Klopp",
     credential: "Founder, The North Face",
     headshotUrl: "/photos/hap-klopp-headshot.jpg",
+    headshotPosition: "center center",
     talkTitle: "How Organizations Lose Their Edge — and How to Get It Back",
     talkSubtitle: "A framework for identifying momentum loss and rebuilding relevance",
     bio: "Hap Klopp built The North Face from a small San Francisco climbing shop into one of the most recognized outdoor brands on the planet. After leading the company through decades of growth, he has spent his career since studying what separates organizations that sustain excellence from those that quietly drift into irrelevance — and why the answer is almost never the market.",

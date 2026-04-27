@@ -63,7 +63,8 @@ export function SpeakerProfile() {
                 <img
                   src={speaker.headshotUrl}
                   alt={speaker.name}
-                  className="w-36 h-36 md:w-48 md:h-48 rounded-xl object-cover object-top border-4 border-navy-900 shadow-2xl"
+                  className="w-36 h-36 md:w-48 md:h-48 rounded-xl object-cover border-4 border-navy-900 shadow-2xl"
+                  style={{ objectPosition: speaker.headshotPosition ?? 'center top' }}
                 />
               ) : (
                 <div className="w-36 h-36 md:w-48 md:h-48 rounded-xl bg-navy-800 border-4 border-navy-900 shadow-2xl flex items-center justify-center">
