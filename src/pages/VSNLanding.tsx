@@ -109,7 +109,7 @@ export function VSNLanding() {
                 },
                 {
                   title: "Your Event's Success Is the Metric.",
-                  body: "We don't measure success in bookings. We measure it in standing ovations, hallway conversations, and the emails attendees send their colleagues the next morning.",
+                  body: "Your event planner isn't hired to book entertainment. They're hired to move strategy, develop leaders, and shift culture — and they're accountable to stakeholders who will ask what changed. Every speaker in this network is selected for one thing: the ability to produce measurable transformation in a room. Not applause. Actual change in how your audience thinks, decides, and acts. That's what you can take back to your board.",
                 },
               ].map((d, i) => (
                 <div key={i} className="space-y-3">
@@ -222,7 +222,7 @@ export function VSNLanding() {
       {/* ── FOUNDER QUOTE ── */}
       <section
         className="py-24 px-6 relative"
-        style={{ backgroundImage: `url(/photos/stage-pov-2.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        style={{ backgroundImage: `url(/photos/terry-main-stage.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center 30%', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-[rgba(8,8,25,0.88)] pointer-events-none" />
         <div className="max-w-3xl mx-auto text-center relative z-10 space-y-8">
