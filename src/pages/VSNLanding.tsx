@@ -53,14 +53,19 @@ export function VSNLanding() {
               alt="Visionary Speakers Network"
               className="w-64 md:w-80 mx-auto drop-shadow-2xl"
             />
-            <div className="space-y-4">
+            <div className="space-y-5">
               <div className="h-px w-24 bg-gold-500/40 mx-auto" />
-              <p className="text-lg md:text-xl font-serif text-white/70 tracking-[0.15em] uppercase">
-                Where Vision Meets Voice,
+              <h1 className="text-4xl md:text-6xl font-serif text-white leading-tight tracking-wide uppercase">
+                The Power of<br />the Human Voice.
+              </h1>
+              <p className="text-lg md:text-xl font-serif text-white/60 italic">
+                There is no more powerful force in the world.
               </p>
-              <p className="text-lg md:text-xl font-serif text-white/70 tracking-[0.15em] uppercase">
-                and Voice Creates Change.
-              </p>
+              <div className="space-y-1 pt-2">
+                <p className="text-sm text-white/40 leading-relaxed">It's not just about teaching or entertaining. It's about creating change.</p>
+                <p className="text-sm text-white/40 leading-relaxed">Changing cultures. Changing thought processes. Changing decisions, actions, and outcomes.</p>
+                <p className="text-sm text-white/40 leading-relaxed">It's about helping build a new future — for the audience, and the organization alike.</p>
+              </div>
               <div className="h-px w-24 bg-gold-500/40 mx-auto" />
             </div>
             <a
