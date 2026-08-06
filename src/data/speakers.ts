@@ -34,7 +34,7 @@ export const speakers: Speaker[] = [
     ],
     fee: "$20,000 – $35,000",
     videoUrl: "",
-    oneSheetUrl: "/one-sheets/larry-namer.pdf",
+    oneSheetUrl: "",
     email: "terry@thestageadvantage.com",
   },
   {
@@ -56,7 +56,7 @@ export const speakers: Speaker[] = [
     ],
     fee: "$20,000 – $35,000",
     videoUrl: "",
-    oneSheetUrl: "/one-sheets/hap-klopp.pdf",
+    oneSheetUrl: "",
     email: "terry@thestageadvantage.com",
   },
   {
@@ -77,7 +77,7 @@ export const speakers: Speaker[] = [
     ],
     fee: "$20,000 – $35,000",
     videoUrl: "",
-    oneSheetUrl: "/one-sheets/larry-kasanoff.pdf",
+    oneSheetUrl: "",
     email: "terry@thestageadvantage.com",
   },
 ];

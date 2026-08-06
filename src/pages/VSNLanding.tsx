@@ -1,31 +1,16 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { speakers } from "../data/speakers";
+import { SiteNav } from "../components/SiteNav";
+import { SiteFooter } from "../components/SiteFooter";
 import vsnLogo from "../assets/vsn-logo-transparent.png";
 
 export function VSNLanding() {
   return (
     <div className="min-h-screen bg-navy-900 text-white overflow-x-hidden">
 
-      {/* ── NAV ── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-900/90 backdrop-blur-md border-b border-white/5">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <span className="font-serif text-white/80 text-sm tracking-[0.2em] uppercase">
-            Visionary Speakers Network
-          </span>
-          <div className="hidden md:flex items-center gap-10 text-xs font-medium tracking-[0.2em] uppercase text-white/50">
-            <a href="#speakers" className="hover:text-white transition-colors">Our Speakers</a>
-            <a href="#about" className="hover:text-white transition-colors">About</a>
-            <a
-              href="mailto:terry@thestageadvantage.com?subject=Speaker Search"
-              className="px-5 py-2 border border-gold-500/50 text-gold-400 hover:bg-gold-500/10 rounded transition-colors"
-            >
-              Book a Speaker
-            </a>
-          </div>
-        </div>
-      </nav>
+      <SiteNav />
 
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
@@ -208,14 +193,13 @@ export function VSNLanding() {
             className="text-center mt-16 pt-16 border-t border-white/8"
           >
             <p className="text-white/40 text-sm mb-4">Don't see exactly what you need?</p>
-            <a
-              href="mailto:terry@thestageadvantage.com?subject=Speaker Search for My Event"
+            <Link
+              to="/find-your-perfect-speaker"
               className="inline-flex items-center gap-2 text-gold-400 hover:text-gold-300 font-medium transition-colors group"
             >
-              <Mail className="w-4 h-4" />
               Tell us about your event — we'll find the right speaker
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -249,19 +233,7 @@ export function VSNLanding() {
         </div>
       </section>
 
-      {/* ── FOOTER ── */}
-      <footer className="py-10 px-6 bg-navy-950 border-t border-white/5">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <img src={vsnLogo} alt="Visionary Speakers Network" className="h-16 opacity-70" />
-          <div className="flex flex-col md:flex-row items-center gap-6 text-xs text-white/30">
-            <a href="mailto:terry@thestageadvantage.com" className="hover:text-white/60 transition-colors flex items-center gap-1.5">
-              <Mail className="w-3 h-3" />
-              terry@thestageadvantage.com
-            </a>
-            <span>© {new Date().getFullYear()} Visionary Speakers Network. All rights reserved.</span>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
 
     </div>
   );

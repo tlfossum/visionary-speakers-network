@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, Download, Play, Mail, ArrowRight } from "lucide-react";
 import { speakers } from "../data/speakers";
+import { SiteFooter } from "../components/SiteFooter";
 import vsnLogo from "../assets/vsn-logo-transparent.png";
 
 export function SpeakerProfile() {
@@ -232,21 +233,7 @@ export function SpeakerProfile() {
         </div>
       </section>
 
-      {/* ── FOOTER ── */}
-      <footer className="py-10 px-6 bg-navy-950 border-t border-white/5">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <Link to="/">
-            <img src={vsnLogo} alt="Visionary Speakers Network" className="h-16 opacity-70 hover:opacity-100 transition-opacity" />
-          </Link>
-          <div className="flex flex-col md:flex-row items-center gap-6 text-xs text-white/30">
-            <a href="mailto:terry@thestageadvantage.com" className="hover:text-white/60 transition-colors flex items-center gap-1.5">
-              <Mail className="w-3 h-3" />
-              terry@thestageadvantage.com
-            </a>
-            <span>© {new Date().getFullYear()} Visionary Speakers Network. All rights reserved.</span>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
 
     </div>
   );
