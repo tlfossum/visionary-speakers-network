@@ -5,6 +5,7 @@ import { Mail, Send, CheckCircle } from "lucide-react";
 import { SiteNav } from "../components/SiteNav";
 import { SiteFooter } from "../components/SiteFooter";
 import { speakers } from "../data/speakers";
+import Email, { SA } from '../components/Email'
 
 const ENDPOINT = "https://vbonmckhfvvijbxdoqis.supabase.co/functions/v1/vsn-speaker-request";
 
@@ -94,9 +95,7 @@ export function FindYourSpeaker() {
               <p className="text-white/60 text-sm leading-relaxed">
                 We'll review your event and come back with a high-signal shortlist — often within 24
                 hours. If anything is urgent, email us directly at{" "}
-                <a href="mailto:terry@thestageadvantage.com" className="text-gold-400 hover:text-gold-300">
-                  terry@thestageadvantage.com
-                </a>.
+                <Email user="terry" host={SA} className="text-gold-400 hover:text-gold-300" />.
               </p>
             </motion.div>
           ) : (
@@ -167,9 +166,7 @@ export function FindYourSpeaker() {
                 <p className="text-sm text-red-400/90 leading-relaxed">
                   Something went wrong sending your request. Please try again, or email us directly
                   at{" "}
-                  <a href="mailto:terry@thestageadvantage.com?subject=Speaker Request" className="text-gold-400 hover:text-gold-300">
-                    terry@thestageadvantage.com
-                  </a>.
+                  <Email user="terry" host={SA} subject="Speaker Request" className="text-gold-400 hover:text-gold-300" />.
                 </p>
               )}
 
@@ -182,7 +179,7 @@ export function FindYourSpeaker() {
               </button>
               <p className="text-center text-white/30 text-xs flex items-center justify-center gap-1.5">
                 <Mail className="w-3 h-3" />
-                Prefer email? <a href="mailto:terry@thestageadvantage.com?subject=Speaker Request" className="text-white/50 hover:text-white/80 transition-colors">terry@thestageadvantage.com</a>
+                Prefer email? <Email user="terry" host={SA} subject="Speaker Request" className="text-white/50 hover:text-white/80 transition-colors" />
               </p>
             </motion.form>
           )}

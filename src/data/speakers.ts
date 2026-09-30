@@ -1,3 +1,4 @@
+import { SA, emailAddress } from "../components/Email";
 export interface Speaker {
   id: string;
   name: string;
@@ -35,7 +36,7 @@ export const speakers: Speaker[] = [
     fee: "$20,000 – $35,000",
     videoUrl: "",
     oneSheetUrl: "",
-    email: "terry@thestageadvantage.com",
+    email: emailAddress("terry", SA),
   },
   {
     id: "hap-klopp",
@@ -57,7 +58,7 @@ export const speakers: Speaker[] = [
     fee: "$20,000 – $35,000",
     videoUrl: "",
     oneSheetUrl: "",
-    email: "terry@thestageadvantage.com",
+    email: emailAddress("terry", SA),
   },
   {
     id: "larry-kasanoff",
@@ -78,6 +79,6 @@ export const speakers: Speaker[] = [
     fee: "$20,000 – $35,000",
     videoUrl: "",
     oneSheetUrl: "",
-    email: "terry@thestageadvantage.com",
+    email: emailAddress("terry", SA),
   },
 ];

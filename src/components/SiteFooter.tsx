@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
 import vsnLogo from "../assets/vsn-logo-transparent.png";
+import Email, { SA, Addr } from './Email'
 
 export function SiteFooter() {
   return (
@@ -12,10 +13,10 @@ export function SiteFooter() {
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-xs text-white/30">
           <Link to="/about" className="hover:text-white/60 transition-colors">About Our Organization</Link>
           <Link to="/find-your-perfect-speaker" className="hover:text-white/60 transition-colors">Find Your Perfect Speaker</Link>
-          <a href="mailto:terry@thestageadvantage.com" className="hover:text-white/60 transition-colors flex items-center gap-1.5">
+          <Email user="terry" host={SA} className="hover:text-white/60 transition-colors flex items-center gap-1.5">
             <Mail className="w-3 h-3" />
-            terry@thestageadvantage.com
-          </a>
+            <Addr user="terry" host={SA} />
+          </Email>
           <span>© {new Date().getFullYear()} Visionary Speakers Network. All rights reserved.</span>
         </div>
       </div>
